@@ -1,0 +1,58 @@
+.December {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+}
+.December1 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 100%;
+  animation: race 5s infinite;
+}
+@keyframes race {
+  0% {
+    transform: rotateY(0deg) rotate(0deg);
+  }
+  50% {
+    transform: translate(400px, 0px) rotateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+.loading1 {
+  width: 400px;
+  height: 400px;
+  animation: race1 2s infinite;
+  border-radius: 999px;
+}
+@keyframes race1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.conteiner {
+  background: blueviolet;
+  width: 150px;
+  height: 150px;
+}
+.conteiner:hover {
+  transform: rotate (180deg);
+  background-color: rgb(128, 255, 74);
+  transition-duration: 0.5s;
+  width: 200px;
+  height: 200px;
+  animation: rotate 3s;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
